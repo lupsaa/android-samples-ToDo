@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_section_height"
+    android:background="@android:color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground" />
+
+    <View
+        android:id="@+id/list_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/list_item_section_height"
+        android:layout_height="@dimen/list_item_section_height"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_normal"
+        android:src="@drawable/ic_reorder" />
+
+    <TextView
+        android:id="@+id/list_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_xxlarge"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_xxlarge"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textColor="@color/text_color_secondary"
+        android:textSize="@dimen/text_size_header" />
+
+    <View
+        android:id="@+id/list_item_drag_handle"
+        android:layout_width="@dimen/list_item_section_height"
+        android:layout_height="@dimen/list_item_section_height"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

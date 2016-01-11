@@ -1,0 +1,5 @@
+include ':todo'
+include ':greendao'
+
+project(':todo').projectDir = new File(rootDir, "app/todo")
+project(':greendao').projectDir = new File(rootDir, "app/greendao")

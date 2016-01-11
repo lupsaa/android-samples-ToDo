@@ -1,0 +1,31 @@
+<resources>
+
+    <dimen name="padding_xxxsmall">1dp</dimen>
+    <dimen name="padding_xxsmall">2dp</dimen>
+    <dimen name="padding_xsmall">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+    <dimen name="padding_xlarge">64dp</dimen>
+    <dimen name="padding_xxlarge">72dp</dimen>
+    <dimen name="padding_xxxlarge">96dp</dimen>
+
+    <dimen name="text_size_huge_headline">56sp</dimen>
+    <dimen name="text_size_big_headline">34sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_subtitle">18sp</dimen>
+    <dimen name="text_size_header">16sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_small_caption">10sp</dimen>
+
+    <dimen name="drawer_width">288dp</dimen>
+    <dimen name="drawer_header_height">160dp</dimen>
+
+    <dimen name="list_item_section_height">56dp</dimen>
+    <dimen name="list_item_todo_height">88dp</dimen>
+
+    <dimen name="dialog_padding">24dp</dimen>
+
+</resources>

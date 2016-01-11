@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    compileOptions.encoding = 'windows-1251'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.example.todo"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        todo {
+            // Key path, alias and passwords stored in gradle.properties, excluded from vcs for safety reasons
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_ALIAS_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.todo
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            minifyEnabled false
+            debuggable true
+            testCoverageEnabled = true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'de.greenrobot:greendao:2.0.0'
+}

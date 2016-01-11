@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_todo_height"
+    android:background="@drawable/card">
+
+    <View
+        android:id="@+id/list_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground" />
+
+    <ImageView
+        android:layout_width="@dimen/padding_normal"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_reorder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginStart="@dimen/padding_large"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:singleLine="true"
+            android:textColor="@color/primary_color_dark"
+            android:textSize="@dimen/text_size_title" />
+
+        <TextView
+            android:id="@+id/list_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:textColor="@color/text_color_secondary"
+            android:textSize="@dimen/text_size_body" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/list_item_drag_handle"
+        android:layout_width="@dimen/padding_xlarge"
+        android:layout_height="@dimen/padding_xlarge"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

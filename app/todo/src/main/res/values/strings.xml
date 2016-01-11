@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">ToDo</string>
+
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="page">Page</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+
+    <string name="edit_section">Edit page</string>
+    <string name="edit_todo">Edit ToDo item</string>
+    <string name="create_section">Create page</string>
+    <string name="create_todo">Create ToDo item</string>
+    <string name="are_you_sure">Are you sure ?</string>
+
+    <string name="error_page_name_empty">Enter a page name first</string>
+    <string name="error_title_empty">Enter at least a title</string>
+
+</resources>
